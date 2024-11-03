@@ -15,3 +15,5 @@ For this basic project it was neecessary to create a simple calculator web-appli
 ## Attribution
 
 Image by <a href="https://pixabay.com/de/users/acatxio-20233758/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">AcatXIo</a> on <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">Pixabay</a>
+
+<a href="https://www.flaticon.com/free-icons/sign-up" title="sign up icons">Sign up icon created by Freepik - Flaticon</a>
