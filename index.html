@@ -8,40 +8,65 @@
   <link rel="icon" type="image/png" href="images/it-icon.png">
 </head>
 <body>
-  <div id="logo-container">
-    <div id="logo">
-      <img id="logo-icon" src="images/it-icon.png" alt="InnovateX Solutions Logo">
-      <h1>InnovateX Solutions</h1>
-    </div>
-    <div id="logo-footer">
-      <p>Photo by
-        <a href="https://pixabay.com/de/users/acatxio-20233758/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">
-          AcatXIo
-        </a>
-        on
-        <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">
-          Pixabay
-        </a>
-      </p>
-    </div>
-  </div>
-  <div id="form-page-part">
-    <div id="form-container">
-      <div id="sign-up-form-pretext">
-        <h2>Welcome to InnovateX Solutions</h2>
-        <p>Join our community to stay ahead of the curve with exclusive updates, innovative solutions, and expert insights.</p>
+  <main>
+    <div id="logo-container">
+      <div id="logo">
+        <img id="logo-icon" src="images/it-icon.png" alt="InnovateX Solutions Logo">
+        <h1>InnovateX Solutions</h1>
       </div>
-      <h2>Sign up now and be a part of the digital revolution.</h2>
-      <form action="" method="post">
-        <fieldset>
-          
-        </fieldset>
-        <div id="button-container">
-          <button type="submit" class="submit-button">Sign Up</button>
-          <p>Already have an account? <a href="" class="login-link">Log in</a></p>
-        </div>
-      </form>
+      <div id="logo-footer">
+        <p>Photo by
+          <a href="https://pixabay.com/de/users/acatxio-20233758/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">
+            AcatXIo
+          </a>
+          on
+          <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8905720">
+            Pixabay
+          </a>
+        </p>
+      </div>
     </div>
-  </div>
+    <div id="form-page-part">
+      <div id="form-container">
+        <div id="sign-up-form-pretext">
+          <h2>Welcome to InnovateX Solutions</h2>
+          <p>Join our community to stay ahead of the curve with exclusive updates, innovative solutions, and expert insights.</p>
+        </div>
+        <h2>Sign up now and be a part of the digital revolution !</h2>
+        <form action="" method="post">
+          <div class="form-ui">
+            <fieldset class="form-input-container">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" class="required-input" name="user-first-name" required minlength="1" maxlength="255">
+            </fieldset>
+            <fieldset class="form-input-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" class="required-input" name="user-last-name" required minlength="1" maxlength="255">
+            </fieldset>
+            <fieldset class="form-input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="required-input" name="user-email" required minlength="1" maxlength="255">
+            </fieldset>
+            <fieldset class="form-input-container">
+              <label for="phone-number">Phone Number</label>
+              <input type="number" id="phone-number" name="user-phone-number" min="0" max="9">
+            </fieldset>
+            <fieldset class="form-input-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" class="required-input" name="user-password" required minlength="8" maxlength="255">
+            </fieldset>
+            <fieldset class="form-input-container">
+              <label for="password-comfirm">Phone Number</label>
+              <input type="password" id="password-comfirm" class="required-input" name="user-password-confirm" required minlength="8" maxlength="255">
+            </fieldset>
+          </div>
+          <div id="button-container">
+            <button type="submit" class="submit-button">Sign Up</button>
+            <p>Already have an account? <a href="" class="login-link">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

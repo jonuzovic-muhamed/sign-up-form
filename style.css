@@ -20,9 +20,8 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  text-decoration: none;
-  color: white;
   text-decoration: underline;
+  color: white;
 }
 
 img {
@@ -30,20 +29,26 @@ img {
   max-inline-size: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 fieldset {
   border: 0;
 }
 
-body {
+main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0;
+  overflow: hidden;
 }
 
 #logo-container {
   min-height: 100vh;
-  width: 35%;
+  width: 40%;
   padding-left: 2.5%;
   display: flex;
   flex-direction: column;
@@ -51,7 +56,7 @@ body {
   justify-content: center;
   background-image: url("./images/waves.png");
   background-size: 100%;
-  background-repeat: repeat;
+  background-repeat: inherit;
   font-family: Roboto, system-ui, sans-serif;
   color: white;
   overflow: hidden;
@@ -63,51 +68,129 @@ body {
 }
 
 #logo {
+  max-height: 50vh;
   width: 100%;
-  padding: 10px;
+  padding: 2.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.5);
-  gap: 15px;
+  gap: 2.5%;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 #logo-footer {
   position: fixed;
   bottom: 2%;
   font-size: 0.5rem;
+  max-height: 10vh;
 }
 
 #form-page-part {
   min-height: 100vh;
-  width: 65%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2.5%;
   background: linear-gradient(270deg, rgb(3, 73, 178) 15%, rgb(0, 17, 43) 90%);
-  overflow: hidden;
 }
 
 #form-container {
-  background-color: white;
-  width: 90%;
-  border: 2px solid black;
-  border-radius: 1cap;
-  padding: 5%;
+  max-height: 85vh;
+  width: 80%;
+  border-radius: 2cap;
+  padding: 3%;
   font-family: Roboto, system-ui, sans-serif;
+  font-size: 0.8rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Web-Kit/Safari make scrollbar corners round */
+#form-container::-webkit-scrollbar-track, #form-container::-webkit-scrollbar-thumb {
+  border-radius: 1cap;
+}
+
+#form-container > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-ui {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-input-container > label {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.form-input-container > input {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.form-input-container > input:hover {
+  border: 1px solid rgb(0, 85, 212);
 }
 
 #form-container > h2, #sign-up-form-pretext > h2 {
   font-family: Roboto, system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 #sign-up-form-pretext, #form-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#button-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  opacity: 0.7;
+}
+
+.login-link {
+  color: rgb(0, 85, 212);
+  text-decoration: none;
+}
+
+.login-link:hover {
+  opacity: 0.6;
 }
